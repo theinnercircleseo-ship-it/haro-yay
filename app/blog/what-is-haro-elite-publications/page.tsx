@@ -79,12 +79,8 @@ export default function WhatIsHaroPage() {
             </p>
 
             <p>
-              This distinction is critical for{" "}
-              <a href="/blog/google-eeat-editorial-link-authority" className="text-purple-600 hover:text-purple-700">
-                Google's E-E-A-T signals
-              </a>
-              and long-term SEO success. Editorial links from HARO carry significantly more authority than purchased
-              placements because they represent genuine editorial endorsement.
+              This distinction is critical for long-term SEO success. Editorial links from HARO carry significantly more
+              authority than purchased placements because they represent genuine editorial endorsement.
             </p>
 
             <h2>HARO vs Traditional Link Building</h2>
@@ -151,15 +147,10 @@ export default function WhatIsHaroPage() {
                 <h4 className="font-medium text-purple-600">Is HARO Worth It? ROI of Editorial vs Bought Links</h4>
                 <p className="text-sm text-muted-foreground mt-1">Comprehensive analysis of HARO's value proposition</p>
               </a>
-              <a
-                href="/blog/write-haro-pitches-journalists-want"
-                className="block p-4 border rounded-lg hover:bg-gray-50"
-              >
-                <h4 className="font-medium text-purple-600">
-                  How to Write HARO Pitches That Journalists Actually Want
-                </h4>
+              <a href="/blog" className="block p-4 border rounded-lg hover:bg-gray-50">
+                <h4 className="font-medium text-purple-600">More HARO Strategy Articles</h4>
                 <p className="text-sm text-muted-foreground mt-1">
-                  Master the art of crafting compelling HARO responses
+                  Discover more insights on editorial authority building
                 </p>
               </a>
             </div>

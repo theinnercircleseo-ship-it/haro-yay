@@ -30,11 +30,11 @@ export function Header() {
         </nav>
 
         <div className="flex items-center space-x-4">
-          <Button variant="ghost" size="sm" className="text-gray-300 hover:text-white hover:bg-gray-800">
-            Sign In
+          <Button variant="ghost" size="sm" className="text-gray-300 hover:text-white hover:bg-gray-800" asChild>
+            <a href="/contact">Sign In</a>
           </Button>
-          <Button size="sm" className="bg-purple-600 hover:bg-purple-700 text-white">
-            Get Started
+          <Button size="sm" className="bg-purple-600 hover:bg-purple-700 text-white" asChild>
+            <a href="/contact">Get Started</a>
           </Button>
         </div>
       </div>

@@ -179,13 +179,10 @@ export default function HaroRoiPage() {
                 <h4 className="font-medium text-purple-600">What is HARO and Why Elite Publications Use It</h4>
                 <p className="text-sm text-muted-foreground mt-1">Understanding the HARO platform and its value</p>
               </a>
-              <a
-                href="/blog/google-eeat-editorial-link-authority"
-                className="block p-4 border rounded-lg hover:bg-gray-50"
-              >
-                <h4 className="font-medium text-purple-600">Google E-E-A-T and Editorial Link Authority</h4>
+              <a href="/blog" className="block p-4 border rounded-lg hover:bg-gray-50">
+                <h4 className="font-medium text-purple-600">More Editorial Strategy Articles</h4>
                 <p className="text-sm text-muted-foreground mt-1">
-                  How editorial links align with Google's quality signals
+                  Explore our complete collection of editorial authority insights
                 </p>
               </a>
             </div>

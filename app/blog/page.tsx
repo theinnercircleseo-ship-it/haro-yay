@@ -28,7 +28,7 @@ export default function BlogPage() {
       category: "Publication Focus",
       readTime: "10 min read",
       date: "Dec 10, 2024",
-      slug: "forbes-haro-insider-secrets",
+      slug: "haro-roi-editorial-vs-bought-links", // Updated slug
     },
   ]
 
@@ -39,7 +39,7 @@ export default function BlogPage() {
       category: "Strategy",
       readTime: "6 min read",
       date: "Dec 8, 2024",
-      slug: "write-haro-pitches-journalists-want",
+      slug: "haro-roi-editorial-vs-bought-links", // Updated slug
     },
     {
       title: "HARO Alternatives for Elite Media Outreach",
@@ -47,7 +47,7 @@ export default function BlogPage() {
       category: "Platforms",
       readTime: "9 min read",
       date: "Dec 5, 2024",
-      slug: "haro-alternatives-elite-media-outreach",
+      slug: "what-is-haro-elite-publications", // Updated slug
     },
     {
       title: "HARO for SaaS: Building Category Leadership",
@@ -55,7 +55,7 @@ export default function BlogPage() {
       category: "Industry",
       readTime: "11 min read",
       date: "Dec 3, 2024",
-      slug: "haro-saas-category-leadership",
+      slug: "haro-roi-editorial-vs-bought-links", // Updated slug
     },
     {
       title: "Google E-E-A-T and Editorial Link Authority",
@@ -64,7 +64,7 @@ export default function BlogPage() {
       category: "Technical",
       readTime: "7 min read",
       date: "Nov 30, 2024",
-      slug: "google-eeat-editorial-link-authority",
+      slug: "what-is-haro-elite-publications", // Updated slug
     },
   ]
 
@@ -178,15 +178,42 @@ export default function BlogPage() {
           <div className="mt-16 bg-gray-50 rounded-lg p-8">
             <h2 className="text-2xl font-bold mb-6 text-center">Explore by Category</h2>
             <div className="grid md:grid-cols-3 gap-4">
-              {["Foundation", "Strategy", "Publication Focus", "Platforms", "Industry", "Technical"].map((category) => (
-                <a
-                  key={category}
-                  href={`/blog/${category.toLowerCase().replace(" ", "-")}`}
-                  className={`${getCategoryColor(category)} px-4 py-3 rounded-lg text-center font-medium hover:opacity-80 transition-opacity`}
-                >
-                  {category}
-                </a>
-              ))}
+              <a
+                href="/blog/what-is-haro-elite-publications"
+                className="bg-blue-100 text-blue-700 px-4 py-3 rounded-lg text-center font-medium hover:opacity-80 transition-opacity"
+              >
+                Foundation
+              </a>
+              <a
+                href="/blog/haro-roi-editorial-vs-bought-links"
+                className="bg-green-100 text-green-700 px-4 py-3 rounded-lg text-center font-medium hover:opacity-80 transition-opacity"
+              >
+                Strategy
+              </a>
+              <a
+                href="/blog"
+                className="bg-purple-100 text-purple-700 px-4 py-3 rounded-lg text-center font-medium hover:opacity-80 transition-opacity"
+              >
+                Publication Focus
+              </a>
+              <a
+                href="/blog"
+                className="bg-orange-100 text-orange-700 px-4 py-3 rounded-lg text-center font-medium hover:opacity-80 transition-opacity"
+              >
+                Platforms
+              </a>
+              <a
+                href="/blog"
+                className="bg-teal-100 text-teal-700 px-4 py-3 rounded-lg text-center font-medium hover:opacity-80 transition-opacity"
+              >
+                Industry
+              </a>
+              <a
+                href="/blog"
+                className="bg-red-100 text-red-700 px-4 py-3 rounded-lg text-center font-medium hover:opacity-80 transition-opacity"
+              >
+                Technical
+              </a>
             </div>
           </div>
         </div>
