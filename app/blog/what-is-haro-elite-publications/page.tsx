@@ -1,12 +1,9 @@
-import { Header } from "@/components/header"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export default function WhatIsHaroPage() {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
