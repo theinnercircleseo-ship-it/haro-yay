@@ -181,7 +181,7 @@ export default function BlogPage() {
               {["Foundation", "Strategy", "Publication Focus", "Platforms", "Industry", "Technical"].map((category) => (
                 <a
                   key={category}
-                  href={`/blog/category/${category.toLowerCase().replace(" ", "-")}`}
+                  href={`/blog/${category.toLowerCase().replace(" ", "-")}`}
                   className={`${getCategoryColor(category)} px-4 py-3 rounded-lg text-center font-medium hover:opacity-80 transition-opacity`}
                 >
                   {category}
