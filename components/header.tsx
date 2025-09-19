@@ -4,12 +4,12 @@ export function Header() {
   return (
     <header className="bg-gray-900 text-white sticky top-0 z-50">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <div className="flex items-center space-x-2">
+        <a href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
           <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">HL</span>
           </div>
           <span className="font-bold text-xl">HARO-Links</span>
-        </div>
+        </a>
 
         <nav className="hidden md:flex items-center space-x-8">
           <a href="/about" className="text-gray-300 hover:text-white transition-colors">
