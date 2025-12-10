@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, ArrowRight, Search, Filter } from "lucide-react"
+import Image from "next/image"
 
 export default function BlogPage() {
   const allArticles = [
@@ -99,37 +100,48 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
-      <main className="container mx-auto px-4 py-16">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <span className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></span>
-              Editorial Authority Insights
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
-              HARO & Media Strategy Blog
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto text-pretty leading-relaxed">
-              Expert insights, proven strategies, and insider secrets for building editorial authority through HARO and
-              elite media outreach.
-            </p>
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image src="/hero-gradient-bg.jpg" alt="" fill className="object-cover" quality={85} sizes="100vw" priority />
+        </div>
+        <div className="absolute inset-0 bg-black/10 z-0"></div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8 max-w-2xl mx-auto">
-              <div className="relative flex-1 w-full">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-                <input
-                  type="text"
-                  placeholder="Search articles..."
-                  className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-20">
+              <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                <span className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></span>
+                Editorial Authority Insights
               </div>
-              <button className="flex items-center gap-2 px-6 py-3 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
-                <Filter className="w-4 h-4" />
-                Filter
-              </button>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance text-white">
+                HARO & Media Strategy Blog
+              </h1>
+              <p className="text-xl text-white/90 max-w-3xl mx-auto text-pretty leading-relaxed">
+                Expert insights, proven strategies, and insider secrets for building editorial authority through HARO
+                and elite media outreach.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8 max-w-2xl mx-auto">
+                <div className="relative flex-1 w-full">
+                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 w-5 h-5" />
+                  <input
+                    type="text"
+                    placeholder="Search articles..."
+                    className="w-full pl-10 pr-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-gray-900 placeholder-gray-500"
+                  />
+                </div>
+                <button className="flex items-center gap-2 px-6 py-3 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer text-gray-900">
+                  <Filter className="w-4 h-4" />
+                  Filter
+                </button>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
 
+      <main className="container mx-auto px-4 py-16">
+        <div className="max-w-7xl mx-auto">
           {featuredArticle && (
             <div className="mb-20">
               <div className="flex items-center gap-3 mb-8">
@@ -141,7 +153,7 @@ export default function BlogPage() {
                 <div className="md:flex">
                   <div className="md:w-1/3 relative overflow-hidden">
                     <img
-                      src={`/abstract-geometric-shapes.png?key=er9ln&height=400&width=600&query=${encodeURIComponent(
+                      src={`/abstract-geometric-shapes.png?height=400&width=600&query=${encodeURIComponent(
                         `featured ${featuredArticle.category.toLowerCase()} editorial authority HARO strategy`,
                       )}`}
                       alt={featuredArticle.title}
@@ -175,7 +187,7 @@ export default function BlogPage() {
                     <p className="text-gray-600 text-lg leading-relaxed mb-6">{featuredArticle.excerpt}</p>
                     <a
                       href={`/blog/${featuredArticle.slug}`}
-                      className="inline-flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors font-medium"
+                      className="inline-flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors font-medium cursor-pointer"
                     >
                       Read Full Article
                       <ArrowRight className="w-4 h-4" />
@@ -202,7 +214,7 @@ export default function BlogPage() {
                   <div className={`h-2 bg-gradient-to-r ${getCategoryGradient(article.category)}`}></div>
                   <div className="aspect-video overflow-hidden">
                     <img
-                      src={`/abstract-geometric-shapes.png?key=hczwt&key=ganh7&height=200&width=400&query=${encodeURIComponent(
+                      src={`/abstract-geometric-shapes.png?height=200&width=400&query=${encodeURIComponent(
                         `${article.category.toLowerCase()} editorial authority ${article.title.split(" ").slice(0, 3).join(" ")}`,
                       )}`}
                       alt={article.title}
@@ -233,7 +245,7 @@ export default function BlogPage() {
                   <CardContent className="pt-0">
                     <a
                       href={`/blog/${article.slug}`}
-                      className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-medium group-hover:gap-3 transition-all"
+                      className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-medium group-hover:gap-3 transition-all cursor-pointer"
                     >
                       Read More
                       <ArrowRight className="w-4 h-4" />
@@ -290,9 +302,9 @@ export default function BlogPage() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 w-full px-4 py-3 rounded-lg text-gray-900 focus:ring-2 focus:ring-white/50 focus:outline-none"
+                className="flex-1 w-full px-4 py-3 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-white/50 focus:outline-none"
               />
-              <button className="px-8 py-3 bg-white text-purple-600 rounded-lg hover:bg-gray-100 transition-colors font-medium whitespace-nowrap">
+              <button className="px-8 py-3 bg-white text-purple-600 rounded-lg hover:bg-gray-100 transition-colors font-medium whitespace-nowrap cursor-pointer">
                 Subscribe
               </button>
             </div>

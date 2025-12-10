@@ -1,13 +1,13 @@
 export function MediaShowcaseSection() {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-5xl font-bold mb-6 text-balance">
-            You'll Be Featured <span className="text-secondary">Here</span>
+          <h2 className="text-3xl lg:text-5xl font-bold mb-6 text-balance text-gray-900">
+            You'll Be Featured <span className="text-purple-600">Here</span>
           </h2>
 
-          <p className="text-xl text-muted-foreground mb-16 text-pretty max-w-3xl mx-auto">
+          <p className="text-xl text-gray-800 mb-16 text-pretty max-w-3xl mx-auto">
             While your competitors buy links from unknown blogs, you'll be featured as an expert source in the
             publications your customers actually read and trust.
           </p>
@@ -15,7 +15,7 @@ export function MediaShowcaseSection() {
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {/* Mobile mockups showing elite publications */}
             <div className="relative group">
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-2 shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
+              <div className="bg-white rounded-3xl p-2 shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
                 <div className="bg-white rounded-2xl overflow-hidden">
                   <div className="h-6 bg-gray-100 flex items-center justify-center">
                     <div className="flex space-x-1">
@@ -45,7 +45,7 @@ export function MediaShowcaseSection() {
             </div>
 
             <div className="relative group">
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-2 shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
+              <div className="bg-white rounded-3xl p-2 shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
                 <div className="bg-white rounded-2xl overflow-hidden">
                   <div className="h-6 bg-gray-100 flex items-center justify-center">
                     <div className="flex space-x-1">
@@ -75,7 +75,7 @@ export function MediaShowcaseSection() {
             </div>
 
             <div className="relative group">
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-2 shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
+              <div className="bg-white rounded-3xl p-2 shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
                 <div className="bg-white rounded-2xl overflow-hidden">
                   <div className="h-6 bg-gray-100 flex items-center justify-center">
                     <div className="flex space-x-1">
@@ -105,7 +105,7 @@ export function MediaShowcaseSection() {
             </div>
 
             <div className="relative group lg:col-start-1">
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-2 shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
+              <div className="bg-white rounded-3xl p-2 shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
                 <div className="bg-white rounded-2xl overflow-hidden">
                   <div className="h-6 bg-gray-100 flex items-center justify-center">
                     <div className="flex space-x-1">
@@ -135,7 +135,7 @@ export function MediaShowcaseSection() {
             </div>
 
             <div className="relative group">
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-2 shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
+              <div className="bg-white rounded-3xl p-2 shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
                 <div className="bg-white rounded-2xl overflow-hidden">
                   <div className="h-6 bg-gray-100 flex items-center justify-center">
                     <div className="flex space-x-1">
@@ -165,7 +165,7 @@ export function MediaShowcaseSection() {
             </div>
 
             <div className="relative group">
-              <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-2 shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
+              <div className="bg-white rounded-3xl p-2 shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
                 <div className="bg-white rounded-2xl overflow-hidden">
                   <div className="h-6 bg-gray-100 flex items-center justify-center">
                     <div className="flex space-x-1">

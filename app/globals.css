@@ -12,13 +12,13 @@
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);
-  /* Adding purple secondary color for highlighted text */
-  --secondary: oklch(0.65 0.15 280);
+  /* Standardized purple color to match text-purple-600 */
+  --secondary: oklch(0.75 0.15 280);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  /* Adding purple accent color */
-  --accent: oklch(0.6 0.18 280);
+  /* Standardized purple accent color */
+  --accent: oklch(0.75 0.15 280);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
@@ -52,13 +52,13 @@
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.985 0 0);
   --primary-foreground: oklch(0.205 0 0);
-  /* Adding purple secondary color for dark mode */
-  --secondary: oklch(0.4 0.15 280);
+  /* Standardized purple color for dark mode */
+  --secondary: oklch(0.75 0.15 280);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
-  /* Adding purple accent color for dark mode */
-  --accent: oklch(0.5 0.18 280);
+  /* Standardized purple accent color for dark mode */
+  --accent: oklch(0.75 0.15 280);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.637 0.237 25.331);
@@ -131,5 +131,14 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  /* Add cursor pointer to all buttons, button elements, and clickable anchors */
+  button,
+  [role="button"],
+  a[href],
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    cursor: pointer;
   }
 }

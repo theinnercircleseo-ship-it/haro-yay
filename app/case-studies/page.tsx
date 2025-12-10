@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Image from "next/image"
 
 export default function CaseStudiesPage() {
   const caseStudies = [
@@ -49,16 +50,27 @@ export default function CaseStudiesPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image src="/hero-gradient-bg.jpg" alt="" fill className="object-cover" quality={85} sizes="100vw" priority />
+        </div>
+        <div className="absolute inset-0 bg-black/10 z-0"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h1 className="text-4xl font-bold mb-6 text-white">Elite Publication Success Stories</h1>
+              <p className="text-xl text-white/90 max-w-3xl mx-auto">
+                Real results from brands that chose editorial authority over bought links. See how strategic media
+                placements drive sustainable growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold mb-6">Elite Publication Success Stories</h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Real results from brands that chose editorial authority over bought links. See how strategic media
-              placements drive sustainable growth.
-            </p>
-          </div>
-
           <div className="grid gap-8 mb-16">
             {caseStudies.map((study, index) => (
               <Card key={index} className="overflow-hidden">

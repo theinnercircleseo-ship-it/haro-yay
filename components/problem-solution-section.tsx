@@ -3,11 +3,11 @@ import { AlertTriangle, Target } from "lucide-react"
 
 export function ProblemSolutionSection() {
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl lg:text-5xl font-bold text-center mb-16 text-balance">
-            Stop Buying Weak Links. Start Earning <span className="text-secondary">Elite Editorial Placements</span>.
+          <h2 className="text-3xl lg:text-5xl font-bold text-center mb-16 text-balance text-gray-900">
+            Stop Buying Weak Links. Start Earning <span className="text-purple-600">Elite Editorial Placements</span>.
           </h2>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">

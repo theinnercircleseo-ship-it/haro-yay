@@ -8,11 +8,8 @@ import { PricingSection } from "@/components/pricing-section"
 import { SocialProofSection } from "@/components/social-proof-section"
 import { FAQSection } from "@/components/faq-section"
 import { FinalCTASection } from "@/components/final-cta-section"
-import { Footer } from "@/components/footer"
 
 export default function HomePage() {
-  console.log("[v0] HomePage component is rendering")
-
   return (
     <div className="min-h-screen bg-background">
       <main>
@@ -27,7 +24,6 @@ export default function HomePage() {
         <FAQSection />
         <FinalCTASection />
       </main>
-      <Footer />
     </div>
   )
 }

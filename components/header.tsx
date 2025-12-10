@@ -1,40 +1,76 @@
+"use client"
+
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 
 export function Header() {
+  const pathname = usePathname()
+
+  const isActive = (path: string) => {
+    if (path === "/") return pathname === "/"
+    return pathname.startsWith(path)
+  }
+
   return (
     <header className="bg-gray-900 text-white sticky top-0 z-50">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <a href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+        <Link href="/" className="flex items-center space-x-2">
           <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">HL</span>
           </div>
           <span className="font-bold text-xl">HARO-Links</span>
-        </a>
+        </Link>
 
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="/about" className="text-gray-300 hover:text-white transition-colors">
+          <Link
+            href="/about"
+            className={`transition-colors ${
+              isActive("/about") ? "text-purple-600 font-semibold" : "text-gray-300 hover:text-white"
+            }`}
+          >
             About Us
-          </a>
-          <a href="/case-studies" className="text-gray-300 hover:text-white transition-colors">
+          </Link>
+          <Link
+            href="/case-studies"
+            className={`transition-colors ${
+              isActive("/case-studies") ? "text-purple-600 font-semibold" : "text-gray-300 hover:text-white"
+            }`}
+          >
             Case Studies
-          </a>
-          <a href="/example-links" className="text-gray-300 hover:text-white transition-colors">
+          </Link>
+          <Link
+            href="/example-links"
+            className={`transition-colors ${
+              isActive("/example-links") ? "text-purple-600 font-semibold" : "text-gray-300 hover:text-white"
+            }`}
+          >
             Example Links
-          </a>
-          <a href="/blog" className="text-gray-300 hover:text-white transition-colors">
+          </Link>
+          <Link
+            href="/blog"
+            className={`transition-colors ${
+              isActive("/blog") ? "text-purple-600 font-semibold" : "text-gray-300 hover:text-white"
+            }`}
+          >
             Blog
-          </a>
-          <a href="/contact" className="text-gray-300 hover:text-white transition-colors">
+          </Link>
+          <Link
+            href="/contact"
+            className={`transition-colors ${
+              isActive("/contact") ? "text-purple-600 font-semibold" : "text-gray-300 hover:text-white"
+            }`}
+          >
             Contact Us
-          </a>
+          </Link>
         </nav>
 
         <div className="flex items-center space-x-4">
           <Button variant="ghost" size="sm" className="text-gray-300 hover:text-white hover:bg-gray-800" asChild>
-            <a href="/contact">Sign In</a>
+            <Link href="/contact">Sign In</Link>
           </Button>
           <Button size="sm" className="bg-purple-600 hover:bg-purple-700 text-white" asChild>
-            <a href="/contact">Get Started</a>
+            <Link href="/contact">Get Started</Link>
           </Button>
         </div>
       </div>

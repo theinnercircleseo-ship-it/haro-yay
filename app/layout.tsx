@@ -4,6 +4,8 @@ import { Inter, JetBrains_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
+import { StickyCtaButton } from "@/components/sticky-cta-button"
 import "./globals.css"
 
 const inter = Inter({
@@ -33,6 +35,8 @@ export default function RootLayout({
       <body className="font-sans">
         <Header />
         <Suspense fallback={null}>{children}</Suspense>
+        <Footer />
+        <StickyCtaButton />
         <Analytics />
       </body>
     </html>

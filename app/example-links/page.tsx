@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink } from "lucide-react"
+import Image from "next/image"
 
 export default function ExampleLinksPage() {
   const exampleLinks = [
@@ -75,16 +76,27 @@ export default function ExampleLinksPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image src="/hero-gradient-bg.jpg" alt="" fill className="object-cover" quality={85} sizes="100vw" priority />
+        </div>
+        <div className="absolute inset-0 bg-black/10 z-0"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h1 className="text-4xl font-bold mb-6 text-white">Example Editorial Placements</h1>
+              <p className="text-xl text-white/90 max-w-3xl mx-auto">
+                Real editorial links from elite publications. These aren't bought links - they're authentic editorial
+                placements that build lasting authority.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold mb-6">Example Editorial Placements</h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Real editorial links from elite publications. These aren't bought links - they're authentic editorial
-              placements that build lasting authority.
-            </p>
-          </div>
-
           <div className="grid gap-6 mb-16">
             {exampleLinks.map((link, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow">

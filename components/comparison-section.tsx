@@ -1,83 +1,70 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { X, Check } from "lucide-react"
 
 export function ComparisonSection() {
+  const traditionalPoints = [
+    "Buy links from sites that sell to everyone",
+    "$300-500 for links from sites that sell placements",
+    "Risk Google penalties from obvious paid links",
+    "Links available to any competitor with budget",
+    "Generic anchor text from paid placements",
+  ]
+
+  const haroPoints = [
+    "Earn editorial placements from exclusive outlets",
+    "Genuine editorial features from outlets that don't sell links",
+    "Algorithm-safe editorial endorsements",
+    "Exclusive access based on expertise",
+    "Natural, contextual mentions by journalists",
+  ]
+
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl lg:text-5xl font-bold text-center mb-16 text-balance">
-            HARO Links vs. <span className="text-secondary">Traditional Link Building</span>
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl lg:text-5xl font-bold text-center mb-16 text-balance text-gray-800">
+            <span className="text-purple-600">HARO Links</span> vs.{" "}
+            <span className="text-black">Traditional Link Building</span>
           </h2>
 
-          <div className="grid lg:grid-cols-2 gap-8">
-            <Card className="border-destructive/20">
-              <CardHeader className="bg-destructive/5">
-                <CardTitle className="text-2xl text-destructive flex items-center">
-                  <X className="w-6 h-6 mr-2" />
-                  Traditional Agencies
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-6">
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <X className="w-5 h-5 text-destructive mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Buy links from sites that sell to everyone</span>
-                  </li>
-                  <li className="flex items-start">
-                    <X className="w-5 h-5 text-destructive mr-3 mt-0.5 flex-shrink-0" />
-                    <span>$300-500 for links from sites that sell placements</span>
-                  </li>
-                  <li className="flex items-start">
-                    <X className="w-5 h-5 text-destructive mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Risk Google penalties from obvious paid links</span>
-                  </li>
-                  <li className="flex items-start">
-                    <X className="w-5 h-5 text-destructive mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Links available to any competitor with budget</span>
-                  </li>
-                  <li className="flex items-start">
-                    <X className="w-5 h-5 text-destructive mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Generic anchor text from paid placements</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+          <div className="relative">
+            {/* Comparison Rows with Connecting Lines */}
+            <div className="relative">
+              {/* Vertical connecting line */}
+              <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gray-300 -translate-x-1/2"></div>
 
-            <Card className="border-green-200 bg-green-50">
-              <CardHeader className="bg-green-100">
-                <CardTitle className="text-2xl text-green-700 flex items-center">
-                  <Check className="w-6 h-6 mr-2" />
-                  HARO-Links Elite
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-6">
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <Check className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-green-800">Earn editorial placements from exclusive outlets</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-green-800">
-                      Genuine editorial features from outlets that don't sell links
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-green-800">Algorithm-safe editorial endorsements</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-green-800">Exclusive access based on expertise</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-green-800">Natural, contextual mentions by journalists</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+              {haroPoints.map((point, index) => (
+                <div key={index} className="grid grid-cols-2 gap-8 mb-4 relative">
+                  {/* HARO Point (Left) */}
+                  <div className="flex items-center gap-4">
+                    <div className="flex-1 bg-green-50 border border-green-200 rounded-lg p-4 text-sm text-gray-700">
+                      {point}
+                    </div>
+                    {/* Checkmark Icon */}
+                    <div className="relative z-10 flex-shrink-0">
+                      <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                        <Check className="w-6 h-6 text-white" />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Traditional Point (Right) */}
+                  <div className="flex items-center gap-4">
+                    {/* X Icon */}
+                    <div className="relative z-10 flex-shrink-0">
+                      <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center">
+                        <X className="w-6 h-6 text-white" />
+                      </div>
+                    </div>
+                    <div className="flex-1 bg-red-50 border border-red-200 rounded-lg p-4 text-sm text-gray-700">
+                      {traditionalPoints[index]}
+                    </div>
+                  </div>
+
+                  {/* Horizontal connecting line */}
+                  <div className="absolute left-1/2 top-1/2 w-8 h-px bg-gray-300 -translate-x-1/2 -translate-y-1/2"></div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

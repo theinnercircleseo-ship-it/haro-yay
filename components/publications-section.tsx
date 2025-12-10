@@ -4,14 +4,14 @@ import { Shield, Star, Award } from "lucide-react"
 
 export function PublicationsSection() {
   return (
-    <section id="publications" className="py-20 bg-muted/30">
+    <section id="publications" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl lg:text-5xl font-bold text-center mb-6 text-balance">
-            The Publications Your Competitors <span className="text-secondary">Can't Access</span>
+          <h2 className="text-3xl lg:text-5xl font-bold text-center mb-6 text-balance text-gray-900">
+            The Publications Your Competitors <span className="text-purple-600">Can't Access</span>
           </h2>
 
-          <p className="text-xl text-muted-foreground text-center mb-16 text-pretty max-w-3xl mx-auto">
+          <p className="text-xl text-gray-800 text-center mb-16 text-pretty max-w-3xl mx-auto">
             These elite publications maintain strict editorial standards and never sell placements. Access is earned
             through expertise, not payment.
           </p>

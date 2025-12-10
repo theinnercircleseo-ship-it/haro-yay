@@ -1,18 +1,30 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image"
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image src="/hero-gradient-bg.jpg" alt="" fill className="object-cover" quality={85} sizes="100vw" priority />
+        </div>
+        <div className="absolute inset-0 bg-black/10 z-0"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h1 className="text-4xl font-bold mb-6 text-white">Our Insider Media Network Team</h1>
+              <p className="text-xl text-white/90 max-w-3xl mx-auto">
+                We're a specialized team of media professionals with insider access to elite publications, helping
+                brands secure authentic editorial placements that build lasting authority.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold mb-6">Our Insider Media Network Team</h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We're a specialized team of media professionals with insider access to elite publications, helping brands
-              secure authentic editorial placements that build lasting authority.
-            </p>
-          </div>
-
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <Card>
               <CardHeader>

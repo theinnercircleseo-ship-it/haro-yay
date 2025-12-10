@@ -3,18 +3,63 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Mail, Clock } from "lucide-react"
+import { Mail, Clock, Calendar } from "lucide-react"
+import Image from "next/image"
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image src="/hero-gradient-bg.jpg" alt="" fill className="object-cover" quality={85} sizes="100vw" priority />
+        </div>
+        <div className="absolute inset-0 bg-black/10 z-0"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h1 className="text-4xl font-bold mb-4 text-white">Schedule Your Strategy Consultation</h1>
+              <p className="text-xl text-white/90 max-w-3xl mx-auto">
+                Book a 30-minute call to discuss your editorial authority goals and get a custom strategy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
+          <div className="mb-16">
+            <Card className="max-w-4xl mx-auto">
+              <CardHeader className="text-center">
+                <CardTitle className="flex items-center justify-center gap-2 text-2xl">
+                  <Calendar className="w-6 h-6 text-purple-600" />
+                  Book Your Free Consultation
+                </CardTitle>
+                <CardDescription>
+                  Select a time that works best for you. We'll discuss your industry, goals, and how we can help you get
+                  featured in elite publications.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div
+                  className="calendly-inline-widget"
+                  data-url="https://calendly.com/brunofigueiroacavalcanti/30min"
+                  style={{ minWidth: "320px", height: "700px" }}
+                ></div>
+                <script
+                  type="text/javascript"
+                  src="https://assets.calendly.com/assets/external/widget.js"
+                  async
+                ></script>
+              </CardContent>
+            </Card>
+          </div>
+
           <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold mb-6">Start Your Editorial Authority Campaign</h1>
+            <h2 className="text-3xl font-bold mb-6">Or Contact Us Directly</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Ready to secure authentic editorial placements in elite publications? Let's discuss how our insider media
-              network can elevate your brand authority.
+              Prefer to reach out another way? Fill out the form below or use our direct contact information.
             </p>
           </div>
 
@@ -64,7 +109,9 @@ export default function ContactPage() {
                     />
                   </div>
 
-                  <Button className="w-full bg-purple-600 hover:bg-purple-700">Get Free Strategy Consultation</Button>
+                  <Button className="w-full bg-purple-600 hover:bg-purple-700 cursor-pointer">
+                    Get Free Strategy Consultation
+                  </Button>
 
                   <p className="text-sm text-muted-foreground text-center">
                     We'll respond within 24 hours with a custom editorial strategy for your brand.
