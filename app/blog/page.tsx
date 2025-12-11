@@ -130,7 +130,7 @@ export default function BlogPage() {
                     className="w-full pl-10 pr-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-gray-900 placeholder-gray-500"
                   />
                 </div>
-                <button className="flex items-center gap-2 px-6 py-3 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer text-gray-900">
+                <button className="flex items-center gap-2 px-6 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg hover:bg-purple-600 hover:text-white hover:border-purple-600 transition-colors cursor-pointer">
                   <Filter className="w-4 h-4" />
                   Filter
                 </button>
@@ -304,7 +304,7 @@ export default function BlogPage() {
                 placeholder="Enter your email"
                 className="flex-1 w-full px-4 py-3 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-white/50 focus:outline-none"
               />
-              <button className="px-8 py-3 bg-white text-purple-600 rounded-lg hover:bg-gray-100 transition-colors font-medium whitespace-nowrap cursor-pointer">
+              <button className="px-8 py-3 bg-white text-purple-600 rounded-lg hover:bg-purple-50 hover:text-purple-700 transition-colors font-medium whitespace-nowrap cursor-pointer">
                 Subscribe
               </button>
             </div>

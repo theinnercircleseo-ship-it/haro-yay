@@ -121,13 +121,13 @@ export default function CaseStudiesPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/example-links"
-                className="inline-flex items-center justify-center px-6 py-3 bg-white text-purple-600 rounded-lg hover:bg-gray-100 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 bg-white text-purple-600 rounded-lg hover:bg-purple-600 hover:text-white transition-colors"
               >
                 View Example Links
               </a>
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-6 py-3 border border-white text-white rounded-lg hover:bg-white hover:text-purple-600 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-purple-600 transition-colors"
               >
                 Start Your Campaign
               </a>

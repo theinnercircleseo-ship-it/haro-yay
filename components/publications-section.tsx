@@ -30,32 +30,32 @@ export function PublicationsSection() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
-                  <li className="flex items-center">
-                    <Shield className="w-4 h-4 text-green-600 mr-3 flex-shrink-0" />
+                  <li className="flex items-start">
+                    <Shield className="w-4 h-4 text-green-600 mr-3 flex-shrink-0 pt-1" />
                     <span>
                       <strong>Forbes</strong> - Editorial features only
                     </span>
                   </li>
-                  <li className="flex items-center">
-                    <Shield className="w-4 h-4 text-green-600 mr-3 flex-shrink-0" />
+                  <li className="flex items-start">
+                    <Shield className="w-4 h-4 text-green-600 mr-3 flex-shrink-0 pt-1" />
                     <span>
                       <strong>Inc Magazine</strong> - No paid placements accepted
                     </span>
                   </li>
-                  <li className="flex items-center">
-                    <Shield className="w-4 h-4 text-green-600 mr-3 flex-shrink-0" />
+                  <li className="flex items-start">
+                    <Shield className="w-4 h-4 text-green-600 mr-3 flex-shrink-0 pt-1" />
                     <span>
                       <strong>Entrepreneur</strong> - Strict source vetting
                     </span>
                   </li>
-                  <li className="flex items-center">
-                    <Shield className="w-4 h-4 text-green-600 mr-3 flex-shrink-0" />
+                  <li className="flex items-start">
+                    <Shield className="w-4 h-4 text-green-600 mr-3 flex-shrink-0 pt-1" />
                     <span>
                       <strong>Fast Company</strong> - Journalist-selected sources
                     </span>
                   </li>
-                  <li className="flex items-center">
-                    <Shield className="w-4 h-4 text-green-600 mr-3 flex-shrink-0" />
+                  <li className="flex items-start">
+                    <Shield className="w-4 h-4 text-green-600 mr-3 flex-shrink-0 pt-1" />
                     <span>
                       <strong>Harvard Business Review</strong> - Expert-only contributions
                     </span>
@@ -77,32 +77,32 @@ export function PublicationsSection() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
-                  <li className="flex items-center">
-                    <Shield className="w-4 h-4 text-blue-600 mr-3 flex-shrink-0" />
+                  <li className="flex items-start">
+                    <Shield className="w-4 h-4 text-blue-600 mr-3 flex-shrink-0 pt-1" />
                     <span>
                       <strong>TechCrunch</strong> - No link sales policy
                     </span>
                   </li>
-                  <li className="flex items-center">
-                    <Shield className="w-4 h-4 text-blue-600 mr-3 flex-shrink-0" />
+                  <li className="flex items-start">
+                    <Shield className="w-4 h-4 text-blue-600 mr-3 flex-shrink-0 pt-1" />
                     <span>
                       <strong>Mashable</strong> - Editorial integrity maintained
                     </span>
                   </li>
-                  <li className="flex items-center">
-                    <Shield className="w-4 h-4 text-blue-600 mr-3 flex-shrink-0" />
+                  <li className="flex items-start">
+                    <Shield className="w-4 h-4 text-blue-600 mr-3 flex-shrink-0 pt-1" />
                     <span>
                       <strong>Search Engine Journal</strong> - Industry expert sources
                     </span>
                   </li>
-                  <li className="flex items-center">
-                    <Shield className="w-4 h-4 text-blue-600 mr-3 flex-shrink-0" />
+                  <li className="flex items-start">
+                    <Shield className="w-4 h-4 text-blue-600 mr-3 flex-shrink-0 pt-1" />
                     <span>
                       <strong>MarketingLand</strong> - Vetted professional insights
                     </span>
                   </li>
-                  <li className="flex items-center">
-                    <Shield className="w-4 h-4 text-blue-600 mr-3 flex-shrink-0" />
+                  <li className="flex items-start">
+                    <Shield className="w-4 h-4 text-blue-600 mr-3 flex-shrink-0 pt-1" />
                     <span>
                       <strong>Social Media Today</strong> - Thought leader features
                     </span>
@@ -121,20 +121,20 @@ export function PublicationsSection() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
-                  <li className="flex items-center">
-                    <Shield className="w-4 h-4 text-purple-600 mr-3 flex-shrink-0" />
+                  <li className="flex items-start">
+                    <Shield className="w-4 h-4 text-purple-600 mr-3 flex-shrink-0 pt-1" />
                     <span>Industry-specific outlets with editorial standards</span>
                   </li>
-                  <li className="flex items-center">
-                    <Shield className="w-4 h-4 text-purple-600 mr-3 flex-shrink-0" />
+                  <li className="flex items-start">
+                    <Shield className="w-4 h-4 text-purple-600 mr-3 flex-shrink-0 pt-1" />
                     <span>Regional business publications with strong authority</span>
                   </li>
-                  <li className="flex items-center">
-                    <Shield className="w-4 h-4 text-purple-600 mr-3 flex-shrink-0" />
+                  <li className="flex items-start">
+                    <Shield className="w-4 h-4 text-purple-600 mr-3 flex-shrink-0 pt-1" />
                     <span>Professional trade magazines with expert-only policies</span>
                   </li>
-                  <li className="flex items-center">
-                    <Shield className="w-4 h-4 text-purple-600 mr-3 flex-shrink-0" />
+                  <li className="flex items-start">
+                    <Shield className="w-4 h-4 text-purple-600 mr-3 flex-shrink-0 pt-1" />
                     <span>Niche authority sites that maintain quality standards</span>
                   </li>
                 </ul>

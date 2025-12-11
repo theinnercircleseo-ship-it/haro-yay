@@ -35,7 +35,7 @@ export function FinalCTASection() {
               <Button
                 variant="outline"
                 size="lg"
-                className="text-lg px-8 py-6 border-2 hover:bg-gray-100 font-semibold w-full sm:w-auto cursor-pointer text-gray-900 border-gray-300 bg-transparent"
+                className="text-lg px-8 py-6 border-2 hover:bg-purple-600 hover:text-white hover:border-purple-600 font-semibold w-full sm:w-auto cursor-pointer text-gray-900 border-gray-300 bg-white"
               >
                 Schedule Consultation
               </Button>

@@ -30,7 +30,7 @@ export function HeroSection() {
           </div>
 
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-balance leading-tight text-white">
-            Haro Link Building
+            HARO Link Building
             <br />
             From Elite Publications
             <br />
@@ -90,7 +90,7 @@ export function HeroSection() {
               <Button
                 variant="outline"
                 size="lg"
-                className="text-lg px-8 py-6 bg-white text-gray-900 border-2 border-white hover:bg-gray-100 font-semibold w-full sm:w-auto"
+                className="text-lg px-8 py-6 bg-white text-gray-900 border-2 border-white hover:bg-purple-600 hover:text-white hover:border-purple-600 font-semibold w-full sm:w-auto"
               >
                 See Our Publication Portfolio
               </Button>

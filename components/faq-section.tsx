@@ -26,6 +26,81 @@ const faqs = [
     answer:
       "Elite publications maintain editorial integrity. They won't feature multiple companies from the same industry without genuine differentiation. Our positioning ensures you're their preferred expert source.",
   },
+  {
+    question: "What is Digital PR?",
+    answer:
+      "Digital PR encompasses strategies for earning media coverage and backlinks through journalist outreach and expert commentary. HARO link building is a specific digital PR tactic focused on responding to journalist source requests to earn editorial placements.",
+  },
+  {
+    question: "Can I pre-approve pitches before submission?",
+    answer:
+      "Yes, though tight HARO deadlines may limit this for time-sensitive queries. We can establish pre-approved topics, messaging guidelines, and approval workflows during onboarding to balance oversight with competitive response timing.",
+  },
+  {
+    question: "How involved do I need to be?",
+    answer:
+      "Minimal involvement after onboarding. We handle everything—query monitoring, pitch writing, submission, and tracking. You receive reports on placements. Some clients prefer more involvement through pitch approvals, which we accommodate.",
+  },
+  {
+    question: "Do you cover every business niche?",
+    answer:
+      "Most legitimate niches work well with HARO, particularly business, marketing, technology, finance, health, and professional services. We don't serve adult content, gambling, pharmaceutical promotions, or regulated industries with platform restrictions.",
+  },
+  {
+    question: "Can I specify dream publications?",
+    answer:
+      "You can share target publications, and we'll prioritize relevant opportunities when they appear. However, HARO operates on journalist demand—we can only respond to queries journalists actually post. Focus on quality metrics rather than specific brand names.",
+  },
+  {
+    question: "How close to my niche will links be?",
+    answer:
+      "We prioritize topically relevant placements, but may also secure valuable links from adjacent categories where your expertise applies. High-authority links from tangentially related topics still provide significant SEO value through domain authority.",
+  },
+  {
+    question: "Can you link to money pages?",
+    answer:
+      "Most HARO links point to homepages because journalists link to source credentials rather than product pages. Homepage authority distributes across your site through internal linking. Discuss specific landing page goals to understand realistic expectations.",
+  },
+  {
+    question: "Can I choose anchor text?",
+    answer:
+      "No—journalists decide anchor text, typically using names or company names. This natural variation is actually beneficial: it's exactly what Google expects from editorially earned links and avoids patterns that could trigger algorithmic scrutiny.",
+  },
+  {
+    question: "How long do links last?",
+    answer:
+      "Most HARO links are permanent—publications typically don't remove archived content. Publishers can update articles anytime, but link removal is uncommon. This risk exists with any editorial link and isn't specific to HARO.",
+  },
+  {
+    question: "Can I white-label this service?",
+    answer:
+      "Yes. We offer white-label partnerships for agencies including custom reporting templates, client communication guidelines, and confidentiality agreements. Contact us to discuss agency arrangements.",
+  },
+  {
+    question: "How many links per month can I expect?",
+    answer:
+      "Realistically, 2–5 qualifying links monthly once momentum builds. This varies by niche—some categories have abundant queries, others fewer. HARO is a quality play delivering high-authority placements, not a volume strategy.",
+  },
+  {
+    question: "What's the typical turnaround time?",
+    answer:
+      "Initial results typically appear within 4–8 weeks. Publication timing varies by journalist—some pieces go live in days, others take months depending on editorial calendars. We continue pitching until all contracted links are delivered.",
+  },
+  {
+    question: "Is HARO link building Google compliant?",
+    answer:
+      "Yes. HARO links are editorially earned, not purchased or exchanged. Journalists independently choose to cite your expertise—this is exactly the type of natural link acquisition that Google's guidelines support and reward.",
+  },
+  {
+    question: "Do you provide refunds?",
+    answer:
+      "We guarantee delivery of contracted qualifying links rather than offering refunds. We continue pitching until all links are delivered. Review our terms for specific policies on partial package completion.",
+  },
+  {
+    question: "What if journalists don't disclose their publication?",
+    answer:
+      "Approximately one-third of HARO queries come from anonymous journalists. Some represent major publications avoiding inbox flooding; others are newer outlets. You only pay for links meeting our quality criteria regardless of pre-submission uncertainty.",
+  },
 ]
 
 export function FAQSection() {

@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/hero-section"
+import { LogoCarousel } from "@/components/logo-carousel"
 import { ProblemSolutionSection } from "@/components/problem-solution-section"
 import { MediaShowcaseSection } from "@/components/media-showcase-section"
 import { PublicationsSection } from "@/components/publications-section"
@@ -14,6 +15,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-background">
       <main>
         <HeroSection />
+        <LogoCarousel />
         <ProblemSolutionSection />
         <MediaShowcaseSection />
         <PublicationsSection />
