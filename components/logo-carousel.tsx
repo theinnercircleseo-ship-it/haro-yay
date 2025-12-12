@@ -15,17 +15,17 @@ export function LogoCarousel() {
     {
       name: "TechCrunch",
       url: "/images/logo-techcrunch-gray.png", // Updated to use new gray logo
-      height: "h-12", // Increased from h-10 to h-12
+      height: "h-16", // Increased from h-14 to h-16 for even larger size
     },
     {
       name: "Harvard Business Review",
       url: "/images/logo-harvard-business-review.png",
-      height: "h-16", // Increased from h-14 to h-16
+      height: "h-16",
     },
     {
       name: "Fast Company",
       url: "/images/logo-fast-company.png",
-      height: "h-12", // Increased from h-10 to h-12
+      height: "h-14", // Increased from h-12 to h-14 to match visual weight
     },
     {
       name: "Inc Magazine",

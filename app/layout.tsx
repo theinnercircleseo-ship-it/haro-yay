@@ -6,6 +6,7 @@ import { Suspense } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { StickyCtaButton } from "@/components/sticky-cta-button"
+import { FloatingContactWidget } from "@/components/floating-contact-widget" // Added floating contact widget
 import "./globals.css"
 
 const inter = Inter({
@@ -37,6 +38,7 @@ export default function RootLayout({
         <Suspense fallback={null}>{children}</Suspense>
         <Footer />
         <StickyCtaButton />
+        <FloatingContactWidget /> {/* Added floating contact widget to all pages */}
         <Analytics />
       </body>
     </html>

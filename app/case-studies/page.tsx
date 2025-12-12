@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
+import { ArrowUpRight } from "lucide-react"
 
 export default function CaseStudiesPage() {
   const caseStudies = [
@@ -96,15 +97,24 @@ export default function CaseStudiesPage() {
 
                   <div className="grid md:grid-cols-3 gap-6">
                     <div className="text-center p-4 bg-green-50 rounded-lg">
-                      <div className="text-2xl font-bold text-green-600 mb-1">{study.results.traffic}</div>
+                      <div className="flex items-center justify-center gap-2 mb-1">
+                        <div className="text-4xl font-extrabold text-green-600">{study.results.traffic}</div>
+                        <ArrowUpRight className="w-8 h-8 text-green-600 stroke-[3]" />
+                      </div>
                       <div className="text-sm text-muted-foreground">Organic Traffic</div>
                     </div>
                     <div className="text-center p-4 bg-blue-50 rounded-lg">
-                      <div className="text-2xl font-bold text-blue-600 mb-1">{study.results.leads}</div>
+                      <div className="flex items-center justify-center gap-2 mb-1">
+                        <div className="text-4xl font-extrabold text-blue-600">{study.results.leads}</div>
+                        <ArrowUpRight className="w-8 h-8 text-blue-600 stroke-[3]" />
+                      </div>
                       <div className="text-sm text-muted-foreground">Qualified Leads</div>
                     </div>
                     <div className="text-center p-4 bg-purple-50 rounded-lg">
-                      <div className="text-2xl font-bold text-purple-600 mb-1">{study.results.authority}</div>
+                      <div className="flex items-center justify-center gap-2 mb-1">
+                        <div className="text-4xl font-extrabold text-purple-600">{study.results.authority}</div>
+                        <ArrowUpRight className="w-8 h-8 text-purple-600 stroke-[3]" />
+                      </div>
                       <div className="text-sm text-muted-foreground">Domain Rating</div>
                     </div>
                   </div>
@@ -121,7 +131,7 @@ export default function CaseStudiesPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/example-links"
-                className="inline-flex items-center justify-center px-6 py-3 bg-white text-purple-600 rounded-lg hover:bg-purple-600 hover:text-white transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 bg-white text-purple-600 rounded-lg hover:bg-gray-100 transition-colors"
               >
                 View Example Links
               </a>
