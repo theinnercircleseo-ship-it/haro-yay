@@ -5,27 +5,27 @@ export function LogoCarousel() {
     {
       name: "Forbes",
       url: "/images/logo-forbes.png",
-      height: "h-5",
+      height: "h-7", // Increased from h-5
     },
     {
       name: "Entrepreneur",
       url: "/images/logo-entrepreneur.png",
-      height: "h-6",
+      height: "h-12", // Increased from h-10 to h-12
     },
     {
       name: "TechCrunch",
-      url: "/images/logo-techcrunch.png",
-      height: "h-6",
+      url: "/images/logo-techcrunch-gray.png", // Updated to use new gray logo
+      height: "h-12", // Increased from h-10 to h-12
     },
     {
       name: "Harvard Business Review",
       url: "/images/logo-harvard-business-review.png",
-      height: "h-10",
+      height: "h-16", // Increased from h-14 to h-16
     },
     {
       name: "Fast Company",
       url: "/images/logo-fast-company.png",
-      height: "h-8",
+      height: "h-12",
     },
     {
       name: "Inc Magazine",

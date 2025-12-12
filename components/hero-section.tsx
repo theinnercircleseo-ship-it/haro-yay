@@ -29,12 +29,13 @@ export function HeroSection() {
             <span>Elite Editorial Placement Service</span>
           </div>
 
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-balance leading-tight text-white">
-            HARO Link Building
+          <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-balance leading-tight">
+            <span className="text-white">HARO Link Building</span>
             <br />
-            From Elite Publications
+            <span className="text-black">From Elite Publications</span>
             <br />
-            That <span className="text-purple-300">Don't Sell Links</span>
+            <span className="text-black">That </span>
+            <span className="text-white">Don't Sell Links</span>
           </h1>
 
           <p className="text-lg lg:text-xl text-white/90 mb-10 text-pretty max-w-3xl mx-auto leading-relaxed">
@@ -42,38 +43,22 @@ export function HeroSection() {
             Forbes, Inc, Entrepreneur, and top-tier publications that only feature genuine experts.
           </p>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10 max-w-3xl mx-auto">
-            <div className="flex flex-col items-center justify-center space-y-2 bg-white/50 backdrop-blur-sm rounded-lg px-3 py-4 border border-white/30">
-              <CheckCircle2 className="w-7 h-7 text-purple-600 flex-shrink-0" />
-              <span className="text-white text-sm font-medium leading-tight text-center">
-                Never Sell
-                <br />
-                Links
-              </span>
+          <div className="max-w-md mx-auto mb-10 space-y-3 text-left">
+            <div className="flex items-center space-x-4 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/20">
+              <CheckCircle2 className="w-6 h-6 text-white flex-shrink-0" />
+              <span className="text-white font-medium">Never Sell Links</span>
             </div>
-            <div className="flex flex-col items-center justify-center space-y-2 bg-white/50 backdrop-blur-sm rounded-lg px-3 py-4 border border-white/30">
-              <TrendingUp className="w-7 h-7 text-purple-600 flex-shrink-0" />
-              <span className="text-white text-sm font-medium leading-tight text-center">
-                $2,500 Link
-                <br />
-                Value
-              </span>
+            <div className="flex items-center space-x-4 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/20">
+              <TrendingUp className="w-6 h-6 text-white flex-shrink-0" />
+              <span className="text-white font-medium">$2,500 Link Value</span>
             </div>
-            <div className="flex flex-col items-center justify-center space-y-2 bg-white/50 backdrop-blur-sm rounded-lg px-3 py-4 border border-white/30">
-              <ShieldCheck className="w-7 h-7 text-purple-600 flex-shrink-0" />
-              <span className="text-white text-sm font-medium leading-tight text-center">
-                Editorial
-                <br />
-                Validation
-              </span>
+            <div className="flex items-center space-x-4 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/20">
+              <ShieldCheck className="w-6 h-6 text-white flex-shrink-0" />
+              <span className="text-white font-medium">Editorial Validation</span>
             </div>
-            <div className="flex flex-col items-center justify-center space-y-2 bg-white/50 backdrop-blur-sm rounded-lg px-3 py-4 border border-white/30">
-              <Sparkles className="w-7 h-7 text-purple-600 flex-shrink-0" />
-              <span className="text-white text-sm font-medium leading-tight text-center">
-                Impossible to
-                <br />
-                Replicate
-              </span>
+            <div className="flex items-center space-x-4 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/20">
+              <Sparkles className="w-6 h-6 text-white flex-shrink-0" />
+              <span className="text-white font-medium">Impossible to Replicate</span>
             </div>
           </div>
 
