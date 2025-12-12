@@ -3,11 +3,10 @@ import { Card, CardContent } from "@/components/ui/card"
 const GreenPuzzleIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
-      d="M6 8 H20 V12 C20 13 21 14 22 14 C23 14 24 13 24 12 V8 H28 V12 C28 13 29 14 30 14 C31 14 32 13 32 12 V8 H36 V20 H32 C31 20 30 21 30 22 C30 23 31 24 32 24 H36 V28 H32 C31 28 30 29 30 30 C30 31 31 32 32 32 H36 V36 H6 V8 Z"
-      stroke="currentColor"
+      d="M8 8H24V14C24 15.6569 22.6569 17 21 17C19.3431 17 18 15.6569 18 14V12H14C12.3431 12 11 13.3431 11 15C11 16.6569 12.3431 18 14 18H16V22H12C10.3431 22 9 23.3431 9 25C9 26.6569 10.3431 28 12 28H14V32H8V8Z"
+      stroke="#22c55e"
       strokeWidth="2"
       fill="none"
-      className="text-green-600"
     />
   </svg>
 )
@@ -15,11 +14,10 @@ const GreenPuzzleIcon = () => (
 const RedPuzzleIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
-      d="M8 6 H32 V10 C32 11 33 12 34 12 C35 12 36 11 36 10 V6 H40 V34 H36 V30 C36 29 35 28 34 28 C33 28 32 29 32 30 V34 H28 V30 C28 29 27 28 26 28 C25 28 24 29 24 30 V34 H20 V30 C20 29 19 28 18 28 C17 28 16 29 16 30 V34 H8 V6 Z"
-      stroke="currentColor"
+      d="M16 8H32V32H16V28C16 26.3431 14.6569 25 13 25C11.3431 25 10 26.3431 10 28V30H8V26C8 24.3431 9.3431 23 11 23C12.6569 23 14 21.6569 14 20C14 18.3431 12.6569 17 11 17H8V13H12C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7H10V8H16Z"
+      stroke="#ef4444"
       strokeWidth="2"
       fill="none"
-      className="text-red-600"
     />
   </svg>
 )

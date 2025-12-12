@@ -25,12 +25,12 @@ export function LogoCarousel() {
     {
       name: "Fast Company",
       url: "/images/logo-fast-company.png",
-      height: "h-12",
+      height: "h-12", // Increased from h-10 to h-12
     },
     {
       name: "Inc Magazine",
       url: "/images/logo-inc.png",
-      height: "h-8",
+      height: "h-8", // Kept as requested
     },
   ]
 
