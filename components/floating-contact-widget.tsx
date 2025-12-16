@@ -9,10 +9,16 @@ import { Textarea } from "@/components/ui/textarea"
 export function FloatingContactWidget() {
   const [isOpen, setIsOpen] = useState(false)
   const formRef = useRef<HTMLDivElement>(null)
+  const buttonRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (formRef.current && !formRef.current.contains(event.target as Node)) {
+      if (
+        formRef.current &&
+        !formRef.current.contains(event.target as Node) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false)
       }
     }
@@ -29,6 +35,7 @@ export function FloatingContactWidget() {
   return (
     <>
       <button
+        ref={buttonRef}
         onClick={() => setIsOpen(!isOpen)}
         className="fixed left-6 top-1/2 -translate-y-1/2 z-50 bg-purple-600 hover:bg-purple-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-105 cursor-pointer w-14 h-14"
         aria-label="Open contact form"
@@ -56,9 +63,7 @@ export function FloatingContactWidget() {
             {/* Form content */}
             <div className="p-6">
               <div className="flex items-start gap-3 mb-6">
-                <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-xl flex-shrink-0">
-                  👤
-                </div>
+                <img src="/images/haro-logo.png" alt="HARO Logo" className="w-10 h-10 rounded-full flex-shrink-0" />
                 <p className="text-sm text-gray-600 mt-2">
                   Enter your question below and we'll get back to you as soon as possible.
                 </p>
