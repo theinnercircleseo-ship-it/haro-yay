@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export function Footer() {
   return (
     <footer className="bg-sidebar border-t border-sidebar-border">
@@ -5,11 +7,16 @@ export function Footer() {
         <div className="grid lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">HL</span>
-              </div>
+              <Image
+                src="/images/haro-logo.png"
+                alt="HARO-Links Logo"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
               <span className="font-bold text-xl">HARO-Links</span>
             </div>
+            {/* </CHANGE> */}
             <p className="text-muted-foreground mb-4 max-w-md leading-relaxed">
               Elite editorial placement service securing backlinks from top-tier publications that don't sell links.
               Genuine authority recognition for serious brands.

@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export function Header() {
   const pathname = usePathname()
@@ -20,8 +21,8 @@ export function Header() {
     <header className="bg-gray-900 text-white sticky top-0 z-50">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2" onClick={handleLinkClick}>
-          <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-sm">HL</span>
+          <div className="w-10 h-10 relative flex-shrink-0">
+            <Image src="/images/haro-logo.png" alt="HARO-Links Logo" width={40} height={40} className="rounded-full" />
           </div>
           <span className="font-bold text-xl">HARO-Links</span>
         </Link>

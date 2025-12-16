@@ -29,7 +29,7 @@ export function HeroSection() {
             <span>Elite Editorial Placement Service</span>
           </div>
 
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-balance leading-tight">
+          <h1 className="text-5xl lg:text-7xl font-bold mb-6 text-balance leading-tight">
             <span className="text-white">HARO Link Building</span>
             <br />
             <span className="text-black">From Elite Publications</span>

@@ -28,10 +28,9 @@ export function FloatingContactWidget() {
 
   return (
     <>
-      {/* Floating button - fixed on left side, vertically centered */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed left-6 top-1/2 -translate-y-1/2 z-50 w-14 h-14 bg-purple-600 hover:bg-purple-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 cursor-pointer"
+        className="fixed left-6 top-1/2 -translate-y-1/2 z-50 bg-purple-600 hover:bg-purple-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-105 cursor-pointer w-14 h-14"
         aria-label="Open contact form"
       >
         <MessageSquare className="w-6 h-6" />

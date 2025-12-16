@@ -57,6 +57,14 @@ const plans = [
 
 export function PricingSection() {
   const [billingPeriod, setBillingPeriod] = useState<"monthly" | "yearly">("monthly")
+  const [flipKey, setFlipKey] = useState(0)
+
+  const handleBillingChange = (period: "monthly" | "yearly") => {
+    if (period !== billingPeriod) {
+      setBillingPeriod(period)
+      setFlipKey((prev) => prev + 1)
+    }
+  }
 
   return (
     <section id="pricing" className="py-20 bg-gray-50">
@@ -74,7 +82,7 @@ export function PricingSection() {
           <div className="flex justify-center mb-12">
             <div className="inline-flex bg-white rounded-lg p-1 shadow-sm border border-gray-200">
               <button
-                onClick={() => setBillingPeriod("monthly")}
+                onClick={() => handleBillingChange("monthly")}
                 className={`px-6 py-2 rounded-md font-medium transition-all ${
                   billingPeriod === "monthly"
                     ? "bg-purple-600 text-white shadow-sm"
@@ -84,7 +92,7 @@ export function PricingSection() {
                 Monthly
               </button>
               <button
-                onClick={() => setBillingPeriod("yearly")}
+                onClick={() => handleBillingChange("yearly")}
                 className={`px-6 py-2 rounded-md font-medium transition-all ${
                   billingPeriod === "yearly"
                     ? "bg-purple-600 text-white shadow-sm"
@@ -99,8 +107,10 @@ export function PricingSection() {
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
             {plans.map((plan, index) => (
               <Card
-                key={plan.name}
-                className={`relative flex flex-col ${index === 1 ? "border-2 border-secondary shadow-xl scale-105" : ""}`}
+                key={`${plan.name}-${flipKey}`}
+                className={`relative flex flex-col ${
+                  index === 1 ? "border-2 border-secondary shadow-xl scale-105" : ""
+                } animate-[flip_0.6s_ease-in-out]`}
               >
                 {plan.badge && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -158,6 +168,21 @@ export function PricingSection() {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes flip {
+          0% {
+            transform: perspective(1000px) rotateY(0deg);
+          }
+          50% {
+            transform: perspective(1000px) rotateY(90deg);
+            opacity: 0.5;
+          }
+          100% {
+            transform: perspective(1000px) rotateY(0deg);
+          }
+        }
+      `}</style>
     </section>
   )
 }
