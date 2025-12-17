@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button"
 import { CheckCircle2, TrendingUp, ShieldCheck, Sparkles } from "lucide-react"
-import Image from "next/image"
 import Link from "next/link"
 
 const StarRating = () => (
@@ -16,12 +15,15 @@ const StarRating = () => (
 export function HeroSection() {
   return (
     <section className="relative py-20 lg:py-32 overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <Image src="/hero-gradient-bg.jpg" alt="" fill className="object-cover" priority quality={85} sizes="100vw" />
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/fluid-lines-background.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-purple-500 to-pink-500 opacity-90" />
       </div>
-
-      <div className="absolute inset-0 bg-black/10 z-0"></div>
-
+      {/* </CHANGE> */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center space-x-2 bg-purple-500/90 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -82,7 +84,7 @@ export function HeroSection() {
             <Link href="/contact">
               <Button
                 size="lg"
-                className="bg-purple-600 text-white hover:bg-purple-700 text-lg px-8 py-6 font-semibold w-full sm:w-auto"
+                className="bg-white text-purple-600 hover:bg-gray-100 text-lg px-8 py-6 font-semibold w-full sm:w-auto"
               >
                 Secure Your Elite Links
               </Button>
@@ -91,16 +93,18 @@ export function HeroSection() {
               <Button
                 variant="outline"
                 size="lg"
-                className="text-lg px-8 py-6 bg-white text-gray-900 border-2 border-white hover:bg-gray-100 hover:text-gray-900 hover:border-gray-100 font-semibold w-full sm:w-auto"
+                className="text-lg px-8 py-6 bg-white text-purple-600 border-2 border-white hover:bg-gray-100 hover:text-purple-600 hover:border-gray-100 font-semibold w-full sm:w-auto"
               >
                 See Our Publication Portfolio
               </Button>
             </Link>
           </div>
+          {/* </CHANGE> */}
 
-          <p className="text-sm text-red-200 font-medium bg-red-900/30 backdrop-blur-sm inline-block px-4 py-2 rounded">
+          <p className="text-sm text-purple-600 font-medium bg-white/90 backdrop-blur-sm inline-block px-4 py-2 rounded">
             Limited to 50 clients maximum. Consultation required.
           </p>
+          {/* </CHANGE> */}
         </div>
       </div>
     </section>
