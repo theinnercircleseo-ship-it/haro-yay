@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Image from "next/image"
+import { Shield, TrendingUp, Sparkles } from "lucide-react"
 
 export default function AboutPage() {
   return (
@@ -25,6 +26,50 @@ export default function AboutPage() {
 
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
+          <div className="mb-16">
+            <h2 className="text-2xl font-bold mb-8 text-center">Meet Our Team</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <Card>
+                <CardContent className="pt-6">
+                  <div className="w-24 h-24 bg-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-3xl font-bold text-purple-600">JD</span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-center mb-2">John Doe</h3>
+                  <p className="text-purple-600 text-center mb-3 text-sm">Founder & CEO</p>
+                  <p className="text-muted-foreground text-sm text-center">
+                    Former Forbes contributor with 10+ years building editorial relationships with elite publications.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <div className="w-24 h-24 bg-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-3xl font-bold text-purple-600">SM</span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-center mb-2">Sarah Miller</h3>
+                  <p className="text-purple-600 text-center mb-3 text-sm">Head of Media Relations</p>
+                  <p className="text-muted-foreground text-sm text-center">
+                    Former TechCrunch journalist specializing in SaaS and fintech editorial placements.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <div className="w-24 h-24 bg-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-3xl font-bold text-purple-600">MC</span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-center mb-2">Michael Chen</h3>
+                  <p className="text-purple-600 text-center mb-3 text-sm">Director of Strategy</p>
+                  <p className="text-muted-foreground text-sm text-center">
+                    Expert in crafting editorial campaigns that build long-term brand authority and thought leadership.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <Card>
               <CardHeader>
@@ -60,11 +105,13 @@ export default function AboutPage() {
           </div>
 
           <div className="bg-gray-50 rounded-lg p-8 mb-16">
-            <h2 className="text-2xl font-bold mb-6 text-center">Why Editorial Authority Matters</h2>
+            <h2 className="text-2xl font-bold mb-6 text-center">
+              Why <span className="text-purple-600">Editorial Authority</span> Matters
+            </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-purple-600">3x</span>
+                  <Shield className="w-8 h-8 text-purple-600" />
                 </div>
                 <h3 className="font-semibold mb-2">Higher Trust</h3>
                 <p className="text-sm text-muted-foreground">
@@ -73,7 +120,7 @@ export default function AboutPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-purple-600">10x</span>
+                  <TrendingUp className="w-8 h-8 text-purple-600" />
                 </div>
                 <h3 className="font-semibold mb-2">SEO Value</h3>
                 <p className="text-sm text-muted-foreground">
@@ -82,7 +129,7 @@ export default function AboutPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-purple-600">∞</span>
+                  <Sparkles className="w-8 h-8 text-purple-600" />
                 </div>
                 <h3 className="font-semibold mb-2">Long-term Impact</h3>
                 <p className="text-sm text-muted-foreground">

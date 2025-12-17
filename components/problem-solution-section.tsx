@@ -1,24 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card"
 
-const GreenPuzzleIcon = () => (
+const ProblemIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path
-      d="M8 8H24V14C24 15.6569 22.6569 17 21 17C19.3431 17 18 15.6569 18 14V12H14C12.3431 12 11 13.3431 11 15C11 16.6569 12.3431 18 14 18H16V22H12C10.3431 22 9 23.3431 9 25C9 26.6569 10.3431 28 12 28H14V32H8V8Z"
-      stroke="#22c55e"
-      strokeWidth="2"
-      fill="none"
-    />
+    <circle cx="20" cy="20" r="18" stroke="#ef4444" strokeWidth="2" fill="none" />
+    <path d="M13 13L27 27M27 13L13 27" stroke="#ef4444" strokeWidth="2.5" strokeLinecap="round" />
   </svg>
 )
 
-const RedPuzzleIcon = () => (
+const SolutionIcon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path
-      d="M16 8H32V32H16V28C16 26.3431 14.6569 25 13 25C11.3431 25 10 26.3431 10 28V30H8V26C8 24.3431 9.3431 23 11 23C12.6569 23 14 21.6569 14 20C14 18.3431 12.6569 17 11 17H8V13H12C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7H10V8H16Z"
-      stroke="#ef4444"
-      strokeWidth="2"
-      fill="none"
-    />
+    <circle cx="20" cy="20" r="18" stroke="#22c55e" strokeWidth="2" fill="none" />
+    <path d="M12 20L17 25L28 14" stroke="#22c55e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 )
 
@@ -36,7 +28,7 @@ export function ProblemSolutionSection() {
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   <div className="mr-3">
-                    <RedPuzzleIcon />
+                    <ProblemIcon />
                   </div>
                   <h3 className="text-2xl font-bold text-destructive">The Problem</h3>
                 </div>
@@ -65,25 +57,25 @@ export function ProblemSolutionSection() {
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   <div className="mr-3">
-                    <GreenPuzzleIcon />
+                    <SolutionIcon />
                   </div>
                   <h3 className="text-2xl font-bold text-green-700">Our Solution</h3>
                 </div>
-                <p className="text-lg mb-6 leading-relaxed text-justify text-green-800">
+                <p className="text-lg mb-6 leading-relaxed text-justify">
                   We secure genuine editorial placements from prestigious publications that maintain strict editorial
                   standards. These outlets choose sources based on expertise, not payment.
                 </p>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center py-2 border-b border-green-200">
-                    <span className="text-green-800">What we deliver:</span>
+                    <span>What we deliver:</span>
                     <span className="font-bold text-green-600">Editorial placements</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-green-200">
-                    <span className="text-green-800">From outlets where links:</span>
+                    <span>From outlets where links:</span>
                     <span className="font-bold text-green-600">Aren't for sale</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
-                    <span className="text-green-800">Elite publications we access:</span>
+                    <span>Elite publications we access:</span>
                     <span className="font-bold text-green-600">200+ (invitation-only)</span>
                   </div>
                 </div>

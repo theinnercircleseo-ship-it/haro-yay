@@ -95,7 +95,7 @@ export function HeroSection() {
                 size="lg"
                 className="text-lg px-8 py-6 bg-white text-purple-600 border-2 border-white hover:bg-gray-100 hover:text-purple-600 hover:border-gray-100 font-semibold w-full sm:w-auto"
               >
-                See Our Publication Portfolio
+                See Our Portfolio
               </Button>
             </Link>
           </div>
