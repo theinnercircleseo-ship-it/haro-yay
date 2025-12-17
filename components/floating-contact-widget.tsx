@@ -37,17 +37,17 @@ export function FloatingContactWidget() {
       <button
         ref={buttonRef}
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed left-6 top-1/2 -translate-y-1/2 z-50 bg-purple-600 hover:bg-purple-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-105 cursor-pointer w-14 h-14"
+        className="fixed left-6 top-1/2 -translate-y-1/2 z-40 bg-purple-600 hover:bg-purple-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-105 cursor-pointer w-14 h-14"
         aria-label="Open contact form"
       >
         <MessageSquare className="w-6 h-6" />
       </button>
 
       {isOpen && (
-        <div className="fixed left-24 top-1/2 -translate-y-1/2 z-50">
+        <div className="fixed left-4 md:left-24 top-1/2 -translate-y-1/2 z-40 right-4 md:right-auto max-w-[calc(100vw-2rem)] md:max-w-none">
           <div
             ref={formRef}
-            className="bg-white rounded-2xl shadow-2xl w-[400px] relative animate-in slide-in-from-left duration-300"
+            className="bg-white rounded-2xl shadow-2xl w-full md:w-[400px] relative animate-in slide-in-from-left duration-300 ml-16 md:ml-0"
           >
             <div className="bg-purple-600 text-white p-6 rounded-t-2xl relative flex items-center justify-between">
               <h3 className="text-xl font-semibold">Have a question?</h3>

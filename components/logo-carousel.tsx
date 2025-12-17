@@ -5,17 +5,17 @@ export function LogoCarousel() {
     {
       name: "Forbes",
       url: "/images/logo-forbes.png",
-      height: "h-7", // Increased from h-5
+      height: "h-7",
     },
     {
       name: "Entrepreneur",
       url: "/images/logo-entrepreneur.png",
-      height: "h-12", // Increased from h-10 to h-12
+      height: "h-12",
     },
     {
       name: "TechCrunch",
-      url: "/images/logo-techcrunch-gray.png", // Updated to use new gray logo
-      height: "h-16", // Increased from h-14 to h-16 for even larger size
+      url: "/images/logo-techcrunch-gray.png",
+      height: "h-16",
     },
     {
       name: "Harvard Business Review",
@@ -25,12 +25,12 @@ export function LogoCarousel() {
     {
       name: "Fast Company",
       url: "/images/logo-fast-company.png",
-      height: "h-14", // Increased from h-12 to h-14 to match visual weight
+      height: "h-14",
     },
     {
       name: "Inc Magazine",
       url: "/images/logo-inc.png",
-      height: "h-8", // Kept as requested
+      height: "h-8",
     },
   ]
 
@@ -63,6 +63,12 @@ export function LogoCarousel() {
         }
         .animate-scroll {
           animation: scroll 30s linear infinite;
+        }
+        @media (max-width: 768px) {
+          .animate-scroll {
+            /* Doubled mobile carousel speed from 12s to 6s (2× faster) */
+            animation: scroll 6s linear infinite;
+          }
         }
         .animate-scroll:hover {
           animation-play-state: paused;

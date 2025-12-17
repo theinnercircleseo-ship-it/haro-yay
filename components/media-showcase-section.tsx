@@ -12,7 +12,7 @@ export function MediaShowcaseSection() {
             publications your customers actually read and trust.
           </p>
 
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
             {/* Mobile mockups showing elite publications */}
             <div className="relative group">
               <div className="bg-white rounded-3xl p-2 shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
@@ -104,7 +104,7 @@ export function MediaShowcaseSection() {
               </div>
             </div>
 
-            <div className="relative group lg:col-start-1">
+            <div className="relative group">
               <div className="bg-white rounded-3xl p-2 shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
                 <div className="bg-white rounded-2xl overflow-hidden">
                   <div className="h-6 bg-gray-100 flex items-center justify-center">

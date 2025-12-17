@@ -27,41 +27,70 @@ export function ComparisonSection() {
           </h2>
 
           <div className="relative">
-            {/* Comparison Rows with Connecting Lines */}
             <div className="relative">
-              {/* Vertical connecting line */}
-              <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gray-300 -translate-x-1/2"></div>
+              {/* Vertical connecting line - hidden on mobile */}
+              <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gray-300 -translate-x-1/2"></div>
 
               {haroPoints.map((point, index) => (
-                <div key={index} className="grid grid-cols-2 gap-8 mb-4 relative">
-                  {/* HARO Point (Left) */}
-                  <div className="flex items-center gap-4">
-                    <div className="flex-1 bg-green-50 border border-green-200 rounded-lg p-4 text-sm text-gray-700">
-                      {point}
+                <div key={index} className="mb-8 md:mb-4 relative">
+                  {/* Mobile Layout - Stacked vertically with cons before pros */}
+                  <div className="md:hidden space-y-4">
+                    {/* Traditional Point (Con) */}
+                    <div className="flex items-start gap-3">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
+                          <X className="w-5 h-5 text-white" />
+                        </div>
+                      </div>
+                      <div className="flex-1 bg-red-50 border border-red-200 rounded-lg p-4 text-sm text-gray-700">
+                        {traditionalPoints[index]}
+                      </div>
                     </div>
-                    {/* Checkmark Icon */}
-                    <div className="relative z-10 flex-shrink-0">
-                      <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                        <Check className="w-6 h-6 text-white" />
+
+                    {/* HARO Point (Pro) */}
+                    <div className="flex items-start gap-3">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
+                          <Check className="w-5 h-5 text-white" />
+                        </div>
+                      </div>
+                      <div className="flex-1 bg-green-50 border border-green-200 rounded-lg p-4 text-sm text-gray-700">
+                        {point}
                       </div>
                     </div>
                   </div>
 
-                  {/* Traditional Point (Right) */}
-                  <div className="flex items-center gap-4">
-                    {/* X Icon */}
-                    <div className="relative z-10 flex-shrink-0">
-                      <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center">
-                        <X className="w-6 h-6 text-white" />
+                  {/* Desktop Layout - Side by side */}
+                  <div className="hidden md:grid grid-cols-2 gap-8">
+                    {/* HARO Point (Left) */}
+                    <div className="flex items-center gap-4">
+                      <div className="flex-1 bg-green-50 border border-green-200 rounded-lg p-4 text-sm text-gray-700">
+                        {point}
+                      </div>
+                      {/* Checkmark Icon */}
+                      <div className="relative z-10 flex-shrink-0">
+                        <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                          <Check className="w-6 h-6 text-white" />
+                        </div>
                       </div>
                     </div>
-                    <div className="flex-1 bg-red-50 border border-red-200 rounded-lg p-4 text-sm text-gray-700">
-                      {traditionalPoints[index]}
-                    </div>
-                  </div>
 
-                  {/* Horizontal connecting line */}
-                  <div className="absolute left-1/2 top-1/2 w-8 h-px bg-gray-300 -translate-x-1/2 -translate-y-1/2"></div>
+                    {/* Traditional Point (Right) */}
+                    <div className="flex items-center gap-4">
+                      {/* X Icon */}
+                      <div className="relative z-10 flex-shrink-0">
+                        <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center">
+                          <X className="w-6 h-6 text-white" />
+                        </div>
+                      </div>
+                      <div className="flex-1 bg-red-50 border border-red-200 rounded-lg p-4 text-sm text-gray-700">
+                        {traditionalPoints[index]}
+                      </div>
+                    </div>
+
+                    {/* Horizontal connecting line */}
+                    <div className="absolute left-1/2 top-1/2 w-8 h-px bg-gray-300 -translate-x-1/2 -translate-y-1/2"></div>
+                  </div>
                 </div>
               ))}
             </div>
