@@ -18,12 +18,12 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/fluid-lines-background.jpg')",
+          backgroundImage: "url('/purple-abstract-curved-bg.jpg')",
         }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-purple-500 to-pink-500 opacity-90" />
-      </div>
+      />
+      <div className="absolute inset-0 bg-purple-600/20" />
       {/* </CHANGE> */}
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center space-x-2 bg-purple-500/90 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -81,10 +81,10 @@ export function HeroSection() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-            <Link href="/contact">
+            <Link href="/contact" scroll={true}>
               <Button
                 size="lg"
-                className="bg-white text-purple-600 hover:bg-gray-100 text-lg px-8 py-6 font-semibold w-full sm:w-auto"
+                className="bg-green-600 text-white hover:bg-green-700 text-lg px-8 py-6 font-semibold w-full sm:w-auto"
               >
                 Secure Your Elite Links
               </Button>

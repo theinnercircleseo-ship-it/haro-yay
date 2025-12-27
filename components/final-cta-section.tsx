@@ -26,7 +26,7 @@ export function FinalCTASection() {
             <Link href="/contact">
               <Button
                 size="lg"
-                className="bg-purple-600 hover:bg-purple-700 text-white text-lg px-8 py-6 font-semibold w-full sm:w-auto cursor-pointer"
+                className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-6 font-semibold w-full sm:w-auto cursor-pointer"
               >
                 Claim Your Elite Media Access
               </Button>

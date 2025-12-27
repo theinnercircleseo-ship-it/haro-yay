@@ -108,7 +108,7 @@ export function Header() {
               Sign In
             </Link>
           </Button>
-          <Button size="sm" className="bg-purple-600 hover:bg-purple-700 text-white" asChild>
+          <Button size="sm" className="bg-green-600 hover:bg-green-700 text-white" asChild>
             <Link href="/contact" onClick={handleLinkClick}>
               Get Started
             </Link>
@@ -192,7 +192,7 @@ export function Header() {
                   Sign In
                 </Link>
               </Button>
-              <Button size="sm" className="w-full bg-purple-600 hover:bg-purple-700 text-white" asChild>
+              <Button size="sm" className="w-full bg-green-600 hover:bg-green-700 text-white" asChild>
                 <Link href="/contact" onClick={handleLinkClick}>
                   Get Started
                 </Link>

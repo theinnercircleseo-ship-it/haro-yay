@@ -153,7 +153,7 @@ export default function AboutPage() {
               </a>
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
               >
                 Get Started Today
               </a>

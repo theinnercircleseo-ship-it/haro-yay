@@ -96,7 +96,7 @@ export function FloatingContactWidget() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-6 rounded-lg cursor-pointer"
+                  className="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-6 rounded-lg cursor-pointer"
                 >
                   Send <Send className="w-4 h-4 ml-2" />
                 </Button>

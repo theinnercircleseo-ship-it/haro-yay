@@ -149,11 +149,12 @@ export function PricingSection() {
                   </ul>
                   <Link href="/contact">
                     <Button
-                      className={`w-full cursor-pointer ${index === 1 ? "bg-secondary hover:bg-secondary/90" : ""}`}
+                      className={`w-full cursor-pointer ${index === 1 ? "bg-green-600 hover:bg-green-700 text-white" : ""}`}
                       variant={index === 1 ? "default" : "outline"}
                     >
                       Get Started
                     </Button>
+                    {/* </CHANGE> */}
                   </Link>
                 </CardContent>
               </Card>
