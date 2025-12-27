@@ -83,7 +83,9 @@ export function SocialProofSection() {
                   <stat.icon className="w-8 h-8 text-purple-600" />
                 </div>
                 <div className="text-3xl lg:text-4xl font-bold text-purple-600 mb-2">{stat.number}</div>
-                <p className="text-sm text-gray-600 leading-snug min-h-[2.5rem] flex items-center">{stat.label}</p>
+                <p className="text-sm text-gray-600 leading-snug min-h-[3rem] max-w-[200px] flex items-center justify-center">
+                  {stat.label}
+                </p>
               </div>
             ))}
           </div>

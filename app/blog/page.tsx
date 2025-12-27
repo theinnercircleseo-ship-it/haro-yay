@@ -1,7 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, ArrowRight, Search, Filter } from "lucide-react"
-import Image from "next/image"
 
 export default function BlogPage() {
   const allArticles = [
@@ -101,10 +100,13 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image src="/hero-gradient-bg.jpg" alt="" fill className="object-cover" quality={85} sizes="100vw" priority />
-        </div>
-        <div className="absolute inset-0 bg-black/10 z-0"></div>
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/purple-abstract-curved-bg.jpg')",
+          }}
+        />
+        <div className="absolute inset-0 bg-purple-600/20" />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-7xl mx-auto">
